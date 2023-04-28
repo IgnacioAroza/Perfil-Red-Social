@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GLOBO</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="./img/logo.png" alt="" id="logo">
+        <input type="text" placeholder="Ingresa tu usuario..." id="inpUsuario">
+    </header>
+    <section id="main">
+        <div class="inf-basica">
+            <div class="foto">
+                <img src="./img/imgPerfil.jpg" alt="">
+            </div>
+            <div class="datos">
+                <h1>Jane Doe</h1>
+                <p><strong>Email</strong>: jane_doe@email.com</p>
+                <p><strong>Fecha de nacimiento</strong>: 01/05/1996</p>
+                <p><strong>Teléfono</strong>: 918-936-9585</p>
+                <p><strong>Ciudad</strong>: Tokyo, Japon</p>
+                <p>Trabajando en Lawn N</p>
+            </div>
+            <button id="seguir">Seguir</button>
+        </div>
+        <div class="publicacion">
+            <p class="publicado">Publicado hace 1 semana</p>
+            <img src="./img/publicacion.jpg" alt="" class="img-publicacion">
+            <div class="mg">
+                <button class="meGusta" id="meGusta" onclick="sumarLike()">Me Gusta</button>
+                <p><strong class="cantLikes">200</strong> Likes</p>
+            </div>
+            <div class="comentarios">
+                <h4>Comentarios</h4>
+                <p class="comentario"><strong class="nombre">Juan Perez</strong>  ¡Wow, esta foto de Tokio es Impresionante!&#127750;&#10024;</p>
+                <p class="comentario"><strong class="nombre">Kathleen J Rennie</strong> ¡Esta foto de Tokio es simplemente espectacular! Me trae tantos recuerdos.</p>
+                <p class="comentario"><strong class="nombre">Diana Bell</strong>¡Espero que algún día pueda ver Tokio en persona!</p>
+            </div>
+            <form class="inp-comentarios">
+                <input type="text" placeholder="Deja tu comentario..." id="inp-coment">
+                <button id="comentar" class="comentar">Comentar</button>
+            </form>
+        </div>
+        <div class="sobre-mi">
+            <h1 class="title-about">Sobre Mí</h1>
+            <p class="txt-about">¡Hola a todos! Soy Jane, y actualmente vivo en la vibrante y emocionante ciudad de Yokio, Jápon. Me encanta capturar la esencia de la vida urbana a través de mi lente, explorando el contraste entre la arquitectura moderna y las tradiciones centenarias que conviven en esta metropolis única. Desde rascacielos deslumbrantes y calles bulliciosas hasta templos serenos y jardines tranquilos, encuentro inspiración en cada rincón de esta increíble ciudad.</p>
+        </div>
+    </section>
+    <footer>
+        <p>Diseñada por Ignacio Aroza</p>
+    </footer>
+    <script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,222 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:ital,wght@0,400;0,700;0,900;1,500&family=Poppins:wght@700&display=swap');
+
+:root{
+    --bg-main-color: #0084EB;
+    --bg-color: #DDDDDD;
+    --bg-color-2: #fff;
+}
+
+*{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+}
+
+header{
+    background: var(--bg-main-color);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 4rem;
+    width: 100%;
+    box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.6);
+}
+
+#logo{
+    margin: 10rem;
+    height: 1.8rem;
+}
+
+#inpUsuario{
+    margin: 10rem;
+    height: 1.8rem;
+    border: none;
+    border-radius: 5px;
+    text-align: center;
+}
+
+body{
+    background: var(--bg-color);
+}
+
+section{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 15px;
+    grid-row-gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    margin-top: 3rem;
+}
+
+.inf-basica{
+    grid-area: 1 / 1 / 2 / 3;
+    background: #fff;
+    height: 15rem;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+}
+
+.foto{
+    padding: 10px 10px;
+}
+
+.foto img{
+    width: 12rem;
+    height: 12rem;
+    border-radius: 50%;
+    border: 3px solid var(--bg-main-color);
+    margin-left: 3rem;
+}
+
+.inf-basica button{
+    border: none;
+    border-radius: 10px;
+    height: 2.3rem;
+    width: 9rem;
+    background: var(--bg-main-color);
+    color: #fff;
+    margin-left: 40%;
+    margin-top: 8.5rem;
+    cursor: pointer;
+}
+
+.inf-basica button:hover{
+    background: #0000ff;
+}
+
+.datos{
+    margin-left: 1rem;
+}
+
+.datos p, h1{
+    padding: 5px;
+    text-align: left;
+}
+
+.publicacion{
+    grid-area: 2 / 1 / 4 / 2;
+    background: var(--bg-color-2);
+    width: 50rem;
+    height: 55rem;
+    border-radius: 10px;
+    margin-left: 10rem;
+    margin-top: -7rem;
+}
+
+.img-publicacion{
+    width: 80%;
+    height: auto;
+    margin: 2rem 0 0 5rem;
+    border-radius: 10px;
+}
+
+.publicado{
+    text-align: start;
+    margin: 2.5rem 0 0 5rem;
+}
+
+.mg{
+    display: flex;
+    justify-content: space-between;
+    margin: 1rem 5rem;
+}
+
+.meGusta{
+    background: var(--bg-color);
+    border: none;
+    border-radius: 5px;
+    color: var(--bg-main-color);
+    width: 5.5rem;
+    height: 2rem;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.comentarios{
+    width: 40rem;
+    margin: 2.5rem 0 0 5rem;
+}
+
+.comentario{
+    padding-top: 10px;
+}
+
+.inp-comentarios{
+    margin: 2.5rem 0 0 5rem;
+    display: flex;
+    justify-content: space-between;
+    margin: 2rem 5rem;
+}
+
+.inp-comentarios input{
+    background: var(--bg-color);
+    border: none;
+    border-radius: 10px;
+    width: 70%;
+    height: 2rem;
+}
+
+.btn-borrar{
+    background: var(--bg-color);
+    color: red;
+    padding: 5px;
+    border: none;
+    border-radius: 5px;
+    margin-left: 3rem;
+    cursor: pointer;
+}
+
+.btn-borrar:hover{
+    background: darkred;
+}
+
+.comentar{
+    background: var(--bg-main-color);
+    color: var(--bg-color-2);
+    border: none;
+    border-radius: 5px;
+    height: 2rem;
+    width: 6rem;
+    cursor: pointer;
+}
+
+.comentar:hover{
+    background: #0000ff;
+}
+
+.sobre-mi{
+    grid-area: 2 / 2 / 3 / 3;
+    background: var(--bg-color-2);
+    width: 60%;
+    height: 25rem;
+    border-radius: 10px;
+    text-align: start;
+    margin-right: 5rem;
+    margin-top: -7rem;
+}
+
+.title-about{
+    padding: 10px 15px;
+    margin-top: 2rem;
+    color: #bababa;
+}
+
+.txt-about{
+    padding: 10px 15px;
+}
+
+footer{
+    background: #000;
+    width: 100%;
+    height: 2rem;
+    margin-top: 1.5rem;
+    text-align: center;
+    color: #fff;
+    box-shadow: 0px -6px 8px 0px rgba(0,0,0,0.4);
+}
+
+footer p{
+    padding-top: 0.5rem;
+}
