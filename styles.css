@@ -40,12 +40,14 @@ body{
 
 section{
     display: grid;
-    grid-template-rows: repeat(3, 1fr);
-    grid-column-gap: 15px;
-    grid-row-gap: 20px;
     grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
     justify-items: center;
     margin-top: 3rem;
+    height: auto;
+    width: auto;
 }
 
 .inf-basica{
@@ -77,13 +79,15 @@ section{
     width: 9rem;
     background: var(--bg-main-color);
     color: #fff;
-    margin-left: 40%;
-    margin-top: 8.5rem;
+    position: relative;
+    left: 38%;
+    top: 30%;
     cursor: pointer;
 }
 
 .inf-basica button:hover{
     background: #0000ff;
+    transition: 0.3s;
 }
 
 .datos{
@@ -98,11 +102,11 @@ section{
 .publicacion{
     grid-area: 2 / 1 / 4 / 2;
     background: var(--bg-color-2);
-    width: 50rem;
+    width: 85%;
     height: 55rem;
     border-radius: 10px;
-    margin-left: 10rem;
-    margin-top: -7rem;
+    margin-left: 25%;
+    margin-top: -12%;
 }
 
 .img-publicacion{
@@ -184,6 +188,7 @@ section{
 
 .comentar:hover{
     background: #0000ff;
+    transition: 0.3s;
 }
 
 .sobre-mi{
@@ -193,8 +198,8 @@ section{
     height: 25rem;
     border-radius: 10px;
     text-align: start;
-    margin-right: 5rem;
-    margin-top: -7rem;
+    margin-right: 1%;
+    margin-top: -12%;
 }
 
 .title-about{
