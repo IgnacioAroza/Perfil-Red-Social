@@ -82,7 +82,7 @@ section{
     position: relative;
     left: 38%;
     top: 30%;
-    cursor: pointer;
+    cursor: pointer
 }
 
 .inf-basica button:hover{
@@ -139,7 +139,7 @@ section{
 }
 
 .comentarios{
-    width: 40rem;
+    width: 85%;
     margin: 2.5rem 0 0 5rem;
 }
 
