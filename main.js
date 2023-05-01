@@ -32,12 +32,22 @@ inpComentarios.addEventListener('click', (evento) => {
     const comentario = inpComentario.value.trim();
 
     if(!usuario){
-        inpUsuario.innerText = "Por favor, ingresa tu usuario";
+        Swal.fire({
+            title: 'Alerta!',
+            text: 'Recuede ingresar nombre de usuario',
+            icon: 'warning',
+            backdrop: true
+        });
         return;
     }
 
     if(!comentario){
-        inpComentario.innerText = "Por favor, ingresa un comentario";
+        Swal.fire({
+            title: 'Alerta!',
+            text: 'Recuede ingresar comentario',
+            icon: 'warning',
+            backdrop: true
+        });
         return;
     }
 
