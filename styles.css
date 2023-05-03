@@ -80,7 +80,7 @@ section{
     background: var(--bg-main-color);
     color: #fff;
     position: relative;
-    left: 38%;
+    left: 30%;
     top: 30%;
     cursor: pointer
 }

@@ -21,9 +21,9 @@ function sumarLike(){
     botonPresionado = !botonPresionado;
 };
 
-const inpComentarios = document.querySelector('.inp-comentarios');
+const btnComentar = document.getElementById('comentar');
 
-inpComentarios.addEventListener('click', (evento) => {
+btnComentar.addEventListener('click', (evento) => {
     evento.preventDefault();
 
     const inpUsuario = document.getElementById('inpUsuario');
